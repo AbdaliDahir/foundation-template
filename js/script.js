@@ -7,6 +7,12 @@
 (function($) {
     "use strict";
 
+    // card-component-root resize
+    function fx_component_root_resize() {
+        var fxComponentRootHeight = $('.card-active').height();
+        $(".card-component-root").height(fxComponentRootHeight + 50);
+    }
+    
     // Portfolio
     function shuffle_portfolio(element) {
 
