@@ -1,0 +1,94 @@
+/*
+* Template Name: Bienvenue- vCard Resume Personal Template Rtl Version
+* Author: Flexer Theme
+* Version: RTL 1.0
+*/
+:root {
+  --font-family-1: 'Cairo', sans-serif 
+  --font-family-2: 'Cairo', sans-serif;
+}
+body {
+  text-align: right;
+}
+body, p, span, a, .font-roboto, .font-raleway {
+  font-family: 'Cairo', sans-serif !important;
+}
+.card-navbar li:last-child a {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.btn {
+  font-size: 13px;
+  letter-spacing: 0px;
+  height: 40px;
+  line-height: 36px;
+}
+.inner-title,
+.card-navbar li.activate a:after {
+  line-height: 25px;
+}
+.info-list li {
+  text-align: right;
+}
+
+.resume-items .resume-item:before {
+  right: 0;
+  left: auto;
+}
+
+.resume-items .resume-item:after {
+  right: -4px;
+  left: auto
+}
+@media (max-width: 840px){
+  .resume-items .resume-item {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+  
+}
+.skills ul li .progress .percentage,
+.skills.list ul li .name:before {
+  right: 0px;
+  left: auto;
+}
+.skills ul li .progress .percentage .percent {
+  left: 0px;
+  right: auto;
+}
+
+/** Skills **/
+.skills.list ul li .name {
+  padding-right: 23px;
+  padding-left: 0;
+}
+
+/** process **/
+.process:after{
+  right: 50%;
+  left: auto;
+}
+.process h4 {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) { 
+  .row [class^="col-"]:nth-child(n) .process:after { 
+    right: 100%;
+  }
+}
+/** Services **/
+.service-item .service-text {
+  border-right: 3px solid #000;
+  border-left: none;
+}
+
+/** Portfolio **/
+.portfolio-grid figure .desc .category {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+.mfp-content {
+  text-align: right;
+}
