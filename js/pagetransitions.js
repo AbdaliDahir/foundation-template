@@ -438,7 +438,7 @@ var PageTransitions = (function ($, options) {
 
     function onEndAnimation($pageWrapper, $nextPage, $activePage) {
         // endCurrPage = false;
-		// endNextPage = false;
+        // endNextPage = false;
         var fxComponentRootHeight = $nextPage.height();
         $(".card-component-root").height(fxComponentRootHeight + 50);
         resetPage($nextPage, $activePage);

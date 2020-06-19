@@ -1,6 +1,6 @@
 /*
 * Template Name: Bienvenue- vCard Resume Personal Template
-* Author: Ali
+* Author: Flexer Theme
 * Version: 1.0
 */
 
@@ -82,12 +82,19 @@
 
     /*
     =======================================================================
-	    Window Load // resize
-	=======================================================================
-	*/
+        Window Load // resize
+    =======================================================================
+    */
     $(window).on('load', function() { 
         $('.loading').delay(500).fadeOut(500);
 
+        // initializing page transition.
+        var sectionsContainer = $('.card-component-root');
+        if (sectionsContainer[0]) {
+            PageTransitions.init({
+                menu: 'ul.card-navbar',
+            });
+        }
         //Menu Effect
         $('.card-target').on({
             mouseenter: function () {
@@ -99,6 +106,11 @@
         });
     })
 
+    $(window).on('resize', function() { //Resize
+        setTimeout(function(){
+            fx_component_root_resize();
+        }, 400);
+    });
     $(window).on('scroll', function () { //Scroll Sticky Sidebar
         if ($(window).scrollTop() < 20) {
             $('.navbar').removeClass('sticky');
