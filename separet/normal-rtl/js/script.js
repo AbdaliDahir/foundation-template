@@ -1,6 +1,6 @@
 /*
-* Template Name: Bienvenue- vCard Resume Personal Template
-* Author: Flexer Theme
+* Template Name: FreeCard - vCard Resume Personal Template
+* Author: Ali
 * Version: 1.0
 */
 
